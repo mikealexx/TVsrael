@@ -41,7 +41,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 2"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button2_bg_selector"/>
 
         <Button
             android:id="@+id/button3"
@@ -50,7 +51,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 3"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button3_bg_selector"/>
 
         <Button
             android:id="@+id/button4"
@@ -59,7 +61,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 4"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button4_bg_selector"/>
 
         <Button
             android:id="@+id/button5"
@@ -68,7 +71,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 5"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button5_bg_selector"/>
 
         <Button
             android:id="@+id/button6"
@@ -77,7 +81,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 6"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button6_bg_selector"/>
 
         <Button
             android:id="@+id/button7"
@@ -86,7 +91,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 7"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button7_bg_selector"/>
 
         <Button
             android:id="@+id/button8"
@@ -95,7 +101,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 8"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button8_bg_selector"/>
 
         <Button
             android:id="@+id/button9"
@@ -104,7 +111,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:text="Button 9"
-            app:layout_constraintDimensionRatio="1:1" />
+            app:layout_constraintDimensionRatio="1:1"
+            android:background="@drawable/button9_bg_selector"/>
 
     </GridLayout>
 
