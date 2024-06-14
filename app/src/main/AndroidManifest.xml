@@ -20,7 +20,10 @@
 
         <activity android:name=".VideoPlayerActivity"
             android:exported="true">
+        </activity>
 
+        <activity android:name=".ExitActivity"
+            android:exported="true">
         </activity>
 
     </application>

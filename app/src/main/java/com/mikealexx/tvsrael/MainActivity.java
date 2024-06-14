@@ -3,6 +3,7 @@ package com.mikealexx.tvsrael;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
@@ -184,10 +185,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void startVideoActivity(String videoUrl) {
-        Intent intent = new Intent(this, VideoPlayerActivity.class);
-        intent.putExtra("VIDEO_URL", videoUrl);
-        startActivity(intent);
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_ESCAPE:
+            case KeyEvent.KEYCODE_BACK:
+                Intent intent = new Intent(MainActivity.this, ExitActivity.class);
+                startActivity(intent);
+                return true;
+            // Add more cases for other buttons if needed
+            default:
+                return super.onKeyDown(keyCode, event);
+        }
     }
 
     @Override
