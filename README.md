@@ -44,7 +44,7 @@ To install the TVsrael app, follow these steps:
 
 ## Privacy Policy
 
-We do not collect any personal information from users. For more details, please refer to our [Privacy Policy](Privacy_Policy.md).
+We do not collect any personal information from users. For more details, please refer to our [Privacy Policy](PRIVACY.md).
 
 ## Contact Us
 
