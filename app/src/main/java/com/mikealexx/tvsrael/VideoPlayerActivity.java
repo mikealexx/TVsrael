@@ -1,5 +1,6 @@
 package com.mikealexx.tvsrael;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -62,6 +63,19 @@ public class VideoPlayerActivity extends AppCompatActivity {
                 break;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        player.stop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        player.play();
     }
 
     @Override
