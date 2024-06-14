@@ -2,22 +2,14 @@ package com.mikealexx.tvsrael;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
-import com.squareup.picasso.Picasso;
-import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.SimpleExoPlayer;
-import com.google.android.exoplayer2.ui.PlayerView;
-import android.view.KeyEvent;
 
 public class MainActivity extends AppCompatActivity {
     private SimpleExoPlayer player;
-    private PlayerView playerView;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -196,24 +188,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, VideoPlayerActivity.class);
         intent.putExtra("VIDEO_URL", videoUrl);
         startActivity(intent);
-    }
-
-    private void playVideo(String videoUrl) {
-        if (player != null) {
-            player.release();
-        }
-
-        // Create a new ExoPlayer instance
-        player = new SimpleExoPlayer.Builder(this).build();
-        playerView.setPlayer(player);
-
-        // Create a media item
-        MediaItem mediaItem = MediaItem.fromUri(Uri.parse(videoUrl));
-        player.setMediaItem(mediaItem);
-
-        // Prepare and play the video
-        player.prepare();
-        player.play();
     }
 
     @Override
