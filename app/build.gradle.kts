@@ -36,4 +36,5 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.22")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.squareup.okhttp3:okhttp:4.9.3");
 }

@@ -46,6 +46,33 @@ public class MainActivity extends AppCompatActivity {
         Button button9 = findViewById(R.id.button9);
         String button9URL = "https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8";
 
+        Button button10 = findViewById(R.id.button10);
+        String button10URL = "https://ddy1.mizhls.ru/ddy1/premium140/tracks-v1a1/mono.m3u8";
+
+        Button button11 = findViewById(R.id.button11);
+        String button11URL = "https://ddy1.mizhls.ru/ddy1/premium141/tracks-v1a1/mono.m3u8";
+
+        Button button12 = findViewById(R.id.button12);
+        String button12URL = "https://ddy1.mizhls.ru/ddy1/premium142/tracks-v1a1/mono.m3u8";
+
+        Button button13 = findViewById(R.id.button13);
+        String button13URL = "https://ddy1.mizhls.ru/ddy1/premium143/tracks-v1a1/mono.m3u8";
+
+        Button button14 = findViewById(R.id.button14);
+        String button14URL = "https://ddy1.mizhls.ru/ddy1/premium144/tracks-v1a1/mono.m3u8";
+
+        Button button15 = findViewById(R.id.button15);
+        String button15URL = "https://ddy1.mizhls.ru/ddy1/premium145/tracks-v1a1/mono.m3u8";
+
+        Button button16 = findViewById(R.id.button16);
+        String button16URL = "https://ddy1.mizhls.ru/ddy1/premium146/tracks-v1a1/mono.m3u8";
+
+        Button button17 = findViewById(R.id.button17);
+        String button17URL = "https://ddy1.mizhls.ru/ddy1/premium147/tracks-v1a1/mono.m3u8";
+
+        Button button18 = findViewById(R.id.button18);
+        String button18URL = "https://ddy3.mizhls.ru/ddy3/premium148/tracks-v1a1/mono.m3u8";
+
         //buttons selection listener
         button1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -102,13 +129,75 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        button10.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button11.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button12.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button13.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button14.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button15.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button16.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button17.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
+        button18.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+                view.setSelected(hasFocus);
+            }
+        });
+
         //button click listeners
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button1URL);
-                intent.putExtra("NEED_REF", "yes");
                 startActivity(intent);
             }
         });
@@ -118,7 +207,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button2URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -128,7 +216,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button3URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -138,7 +225,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button4URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -148,7 +234,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button5URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -158,7 +243,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button6URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -168,7 +252,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button7URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -178,7 +261,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button8URL);
-                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -188,7 +270,87 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button9URL);
-                intent.putExtra("NEED_REF", "no");
+                startActivity(intent);
+            }
+        });
+
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button10URL);
+                startActivity(intent);
+            }
+        });
+
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button11URL);
+                startActivity(intent);
+            }
+        });
+
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button12URL);
+                startActivity(intent);
+            }
+        });
+
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button13URL);
+                startActivity(intent);
+            }
+        });
+
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button14URL);
+                startActivity(intent);
+            }
+        });
+
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button15URL);
+                startActivity(intent);
+            }
+        });
+
+        button16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button16URL);
+                startActivity(intent);
+            }
+        });
+
+        button17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button17URL);
+                startActivity(intent);
+            }
+        });
+
+        button18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
+                intent.putExtra("VIDEO_URL", button18URL);
                 startActivity(intent);
             }
         });

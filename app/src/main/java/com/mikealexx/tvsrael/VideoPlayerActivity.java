@@ -57,8 +57,8 @@ public class VideoPlayerActivity extends AppCompatActivity {
     private Map<String, String> buildHeaders() {
         Map<String, String> headers = new HashMap<>();
         headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
-        headers.put("Origin", "https://1qwebplay.xyz");
-        headers.put("Referer", "https://1qwebplay.xyz/");
+        headers.put("Origin", "https://claplivehdplay.ru");
+        headers.put("Referer", "https://claplivehdplay.ru/");
         return headers;
     }
 
