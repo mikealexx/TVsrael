@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button1URL);
+                intent.putExtra("NEED_REF", "yes");
                 startActivity(intent);
             }
         });
@@ -117,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button2URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -126,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button3URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -135,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button4URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -144,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button5URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -153,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button6URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -162,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button7URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -171,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button8URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });
@@ -180,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button9URL);
+                intent.putExtra("NEED_REF", "no");
                 startActivity(intent);
             }
         });

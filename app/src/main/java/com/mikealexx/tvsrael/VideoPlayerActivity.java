@@ -5,13 +5,21 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.WindowManager;
-
+import com.google.android.exoplayer2.util.MimeTypes;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.SimpleExoPlayer;
+import com.google.android.exoplayer2.source.hls.HlsMediaSource;
 import com.google.android.exoplayer2.ui.PlayerView;
+import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class VideoPlayerActivity extends AppCompatActivity {
+
+    public static final String MIME_TYPE_HLS = MimeTypes.APPLICATION_M3U8;
     private SimpleExoPlayer player;
     private PlayerView playerView;
 
@@ -30,13 +38,28 @@ public class VideoPlayerActivity extends AppCompatActivity {
         player = new SimpleExoPlayer.Builder(this).build();
         playerView.setPlayer(player);
 
+        DefaultHttpDataSource.Factory dataSourceFactory = new DefaultHttpDataSource.Factory().setDefaultRequestProperties(buildHeaders());
+        MediaItem mediaItem = new MediaItem.Builder().setUri(Uri.parse(videoUrl)).setMimeType(MIME_TYPE_HLS).build();
+        player.setMediaSource(new HlsMediaSource.Factory(dataSourceFactory).createMediaSource(mediaItem));
+
         // Create a media item
-        MediaItem mediaItem = MediaItem.fromUri(Uri.parse(videoUrl));
-        player.setMediaItem(mediaItem);
+//        MediaItem mediaItem = MediaItem.fromUri(Uri.parse(videoUrl));
+//        player.setMediaItem(mediaItem);
 
         // Prepare and play the video
+//        player.prepare();
+//        player.play();
+
         player.prepare();
         player.play();
+    }
+
+    private Map<String, String> buildHeaders() {
+        Map<String, String> headers = new HashMap<>();
+        headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
+        headers.put("Origin", "https://1qwebplay.xyz");
+        headers.put("Referer", "https://1qwebplay.xyz/");
+        return headers;
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
