@@ -40,6 +40,10 @@ To install the TVsrael app, follow these steps:
 ![Channel List](screenshots/channel_list.png)
 ![Live Stream](screenshots/live_stream.png)
 
+## Future Updates
+In the future, more channels are planned to be added - mainly sports, so when you are in the Miluim, you can easily watch soccer matches with your team.
+Unfortunately due to copyrights, the version with the expended channel list won't be added to the play store, but you will still be able to get the application on the [release page](https://github.com/mikealexx/TVsrael/releases).
+
 ## Privacy Policy
 
 We do not collect any personal information from users. For more details, please refer to our [Privacy Policy](PRIVACY.md).
