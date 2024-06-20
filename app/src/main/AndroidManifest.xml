@@ -19,7 +19,8 @@
         </activity>
 
         <activity android:name=".VideoPlayerActivity"
-            android:exported="true">
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|screenSize">
         </activity>
 
         <activity android:name=".ExitActivity"
