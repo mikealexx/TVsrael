@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Ensures the activity is full-screen -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- Removes the title bar -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Ensures the status bar is hidden -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Optional: Customize navigation bar color if needed -->
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+</resources>

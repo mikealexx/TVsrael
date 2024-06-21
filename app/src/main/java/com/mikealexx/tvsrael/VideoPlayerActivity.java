@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import com.google.android.exoplayer2.util.MimeTypes;
 
@@ -27,6 +28,8 @@ public class VideoPlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_video_player);
 
         hideSystemUi();
@@ -120,6 +123,12 @@ public class VideoPlayerActivity extends AppCompatActivity {
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        playerView.setPlayer(player);
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            hideSystemUi();
+            playerView.setPlayer(player);
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            hideSystemUi();
+            playerView.setPlayer(player);
+        }
     }
 }
