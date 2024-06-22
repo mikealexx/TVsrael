@@ -12,8 +12,9 @@ android {
         applicationId = "com.mikealexx.tvsrael"
         minSdk = 21
         targetSdk = 34
-        versionCode = 103
-        versionName = "1.0.3"
+        //x.y.zw: x[1 - Play Store, 2 - Non Play Store].y[minor version number].z[update number].w[1 - mobile, 2 - android TV]
+        versionCode = 1031
+        versionName = "1.0.31 - alpha"
 
     }
 
