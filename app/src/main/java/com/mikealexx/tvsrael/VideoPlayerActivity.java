@@ -1,10 +1,12 @@
 package com.mikealexx.tvsrael;
 
-import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import com.google.android.exoplayer2.util.MimeTypes;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,10 +15,8 @@ import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.source.hls.HlsMediaSource;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class VideoPlayerActivity extends AppCompatActivity {
 
@@ -27,6 +27,8 @@ public class VideoPlayerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_video_player);
 
         hideSystemUi();
@@ -37,21 +39,12 @@ public class VideoPlayerActivity extends AppCompatActivity {
 
         String videoUrl = getIntent().getStringExtra("VIDEO_URL");
 
-        // Create a new ExoPlayer instance
         player = new SimpleExoPlayer.Builder(this).build();
         playerView.setPlayer(player);
 
         DefaultHttpDataSource.Factory dataSourceFactory = new DefaultHttpDataSource.Factory().setDefaultRequestProperties(buildHeaders());
         MediaItem mediaItem = new MediaItem.Builder().setUri(Uri.parse(videoUrl)).setMimeType(MIME_TYPE_HLS).build();
         player.setMediaSource(new HlsMediaSource.Factory(dataSourceFactory).createMediaSource(mediaItem));
-
-        // Create a media item
-//        MediaItem mediaItem = MediaItem.fromUri(Uri.parse(videoUrl));
-//        player.setMediaItem(mediaItem);
-
-        // Prepare and play the video
-//        player.prepare();
-//        player.play();
 
         player.prepare();
         player.play();
@@ -64,8 +57,8 @@ public class VideoPlayerActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN
         );
     }
 
@@ -80,6 +73,7 @@ public class VideoPlayerActivity extends AppCompatActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch(keyCode) {
             case KeyEvent.KEYCODE_ENTER:
+            case KeyEvent.KEYCODE_DPAD_CENTER:
             case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
             case KeyEvent.KEYCODE_MEDIA_PLAY:
             case KeyEvent.KEYCODE_MEDIA_PAUSE:
@@ -103,6 +97,17 @@ public class VideoPlayerActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            hideSystemUi();
+            playerView.setPlayer(player);
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            hideSystemUi();
+            playerView.setPlayer(player);
+        }
+    }
 
     @Override
     protected void onPause() {
