@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.faketouch"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor"
+        android:required="false"/>
+    <!-- Some TV devices have an ethernet connection only -->
+    <uses-feature android:name="android.hardware.wifi"
+        android:required="false"/>
+    <uses-feature android:name="android.software.leanback"
+        android:required="false" />
 
     <application
+        android:banner="@drawable/tv_banner"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"
@@ -12,13 +33,11 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <activity android:name=".MainActivity"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
 
