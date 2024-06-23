@@ -38,7 +38,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button1_bg_selector"
+                    android:background="@drawable/channel9"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -46,7 +46,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button2_bg_selector"
+                    android:background="@drawable/kan11"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -54,7 +54,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button3_bg_selector"
+                    android:background="@drawable/channel12"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -62,7 +62,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button4_bg_selector"
+                    android:background="@drawable/r13"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -70,7 +70,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button5_bg_selector"
+                    android:background="@drawable/channel144"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -78,7 +78,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button6_bg_selector"
+                    android:background="@drawable/shopping_channel_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -86,7 +86,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button7_bg_selector"
+                    android:background="@drawable/makan33"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -94,7 +94,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button8_bg_selector"
+                    android:background="@drawable/kan_hunuhit"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -102,7 +102,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button9_bg_selector"
+                    android:background="@drawable/knesset"
                     android:layout_gravity="center"/>
 
                 <!-- New Buttons -->
@@ -111,7 +111,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button10_bg_selector"
+                    android:background="@drawable/sport1_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -119,7 +119,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button11_bg_selector"
+                    android:background="@drawable/sport2_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -127,7 +127,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button12_bg_selector"
+                    android:background="@drawable/sport3_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -135,7 +135,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button13_bg_selector"
+                    android:background="@drawable/sport4_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -143,7 +143,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button14_bg_selector"
+                    android:background="@drawable/sport5_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -151,7 +151,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button15_bg_selector"
+                    android:background="@drawable/sport5_plus_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -159,7 +159,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button16_bg_selector"
+                    android:background="@drawable/sport5_live_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -167,7 +167,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button17_bg_selector"
+                    android:background="@drawable/sport5_stars_selected"
                     android:layout_gravity="center"/>
 
                 <Button
@@ -175,7 +175,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
-                    android:background="@drawable/button18_bg_selector"
+                    android:background="@drawable/sport5_gold_selected"
                     android:layout_gravity="center"/>
 
             </GridLayout>
