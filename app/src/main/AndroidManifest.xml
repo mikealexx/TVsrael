@@ -21,7 +21,7 @@
     <uses-feature android:name="android.hardware.wifi"
         android:required="false"/>
     <uses-feature android:name="android.software.leanback"
-        android:required="false" />
+        android:required="true" />
 
 
     <application
