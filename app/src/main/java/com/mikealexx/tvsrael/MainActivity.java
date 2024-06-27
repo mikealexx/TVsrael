@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //buttons
         Button button1 = findViewById(R.id.button1);
-        String button1URL = "https://contactgbs.mmdlive.lldns.net/contactgbs/dd4f5f04932345f1b47c4bfb45fbd682/manifest.m3u8";
+        String button1URL = "https://eu-fls1.mizhls.ru/eu-fls1/premium546/tracks-v1a1/mono.m3u8";
 
         Button button2 = findViewById(R.id.button2);
         String button2URL = "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8";
