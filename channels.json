@@ -31,72 +31,109 @@
     {
       "name": "Channel 5",
       "alias": "Channel 14",
-      "url": "https://now14.g-mana.live/media/91517161-44ab-4e46-af70-e9fe26117d2e/mainManifest.m3u8"
+      "url": "https://ch14-channel14-content.akamaized.net/hls/live/2104807/CH14_CHANNEL14/2/streamPlaylist.m3u8",
+      "origin": "https://snippet.univtec.com",
+      "referer": "https://snippet.univtec.com/"
     },
     {
       "name": "Channel 6",
       "alias": "Shopping Channel",
-      "url": "https://shoppingil-rewriter.vidnt.com/index.m3u8"
+      "url": "https://shoppingil-rewriter.vidnt.com/video_360640_p_0.m3u8",
+      "origin": "https://shoppingil-metadata-rr-d.vidnt.com",
+      "referer": "https://shoppingil-metadata-rr-d.vidnt.com/"
     },
     {
       "name": "Channel 7",
       "alias": "Makan 33",
-      "url": "https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8"
+      "url": "https://makan.media.kan.org.il/hls/live/2024680/2024680/source1_4k/chunklist.m3u8",
+      "origin": "https://cdnapisec.kaltura.com",
+      "referer": "https://cdnapisec.kaltura.com/"
     },
     {
       "name": "Channel 8",
       "alias": "Kan Hinuhit",
-      "url": "https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8"
+      "url": "https://kan23.media.kan.org.il/hls/live/2024691-b/2024691/source1_4k/chunklist.m3u8",
+      "origin": "https://www.kankids.org.il",
+      "referer": "https://www.kankids.org.il/"
     },
     {
       "name": "Channel 9",
       "alias": "Knesset",
-      "url": "https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8"
+      "url": "https://contact.gostreaming.tv/Knesset/myStream/chunklist_w1984420875.m3u8",
+      "origin": "https://www.knesset.tv",
+      "referer": "https://www.knesset.tv/"
     },
     {
       "name": "Channel 10",
       "alias": "Sport 1",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium140/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium140/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 11",
       "alias": "Sport 2",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium141/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium141/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 12",
       "alias": "Sport 3",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium142/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium142/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 13",
       "alias": "Sport 4",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium143/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium143/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 14",
       "alias": "Sport 5",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium144/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium144/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 15",
       "alias": "Sport 5 Plus",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium145/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium145/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 16",
       "alias": "Sport 5 Live",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium146/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium146/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 17",
       "alias": "Sport 5 Stars",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium147/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium147/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     },
     {
       "name": "Channel 18",
       "alias": "Sport 5 Gold",
-      "url": "https://ddy1.mizhls.ru/ddy1/premium148/tracks-v1a1/mono.m3u8"
+      "url": "https://ddy1.mizhls.ru/ddy1/premium148/tracks-v1a1/mono.m3u8",
+      "url": "",
+      "origin": "",
+      "referer": "/"
     }
   ]
 }
