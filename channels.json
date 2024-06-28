@@ -24,9 +24,9 @@
     {
       "name": "Channel 4",
       "alias": "Channel 13",
-      "url": "https://reshet.g-mana.live/media/87f59c77-03f6-4bad-a648-897e095e7360/profile/2/profileManifest.m3u8?_uid=cb0cf000-e5d4-48c0-abd7-3d06388ebd31&rK=a5&_did=35e863ab-3130-485e-9227-ade66fc05e7d",
-      "origin": "https://13tv.co.il",
-      "referer": "https://13tv.co.il/"
+      "url": "http://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8",
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 5",
@@ -67,73 +67,64 @@
       "name": "Channel 10",
       "alias": "Sport 1",
       "url": "https://ddy1.mizhls.ru/ddy1/premium140/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 11",
       "alias": "Sport 2",
       "url": "https://ddy1.mizhls.ru/ddy1/premium141/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 12",
       "alias": "Sport 3",
       "url": "https://ddy1.mizhls.ru/ddy1/premium142/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 13",
       "alias": "Sport 4",
       "url": "https://ddy1.mizhls.ru/ddy1/premium143/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 14",
       "alias": "Sport 5",
       "url": "https://ddy1.mizhls.ru/ddy1/premium144/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 15",
       "alias": "Sport 5 Plus",
       "url": "https://ddy1.mizhls.ru/ddy1/premium145/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 16",
       "alias": "Sport 5 Live",
       "url": "https://ddy1.mizhls.ru/ddy1/premium146/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 17",
       "alias": "Sport 5 Stars",
       "url": "https://ddy1.mizhls.ru/ddy1/premium147/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     },
     {
       "name": "Channel 18",
       "alias": "Sport 5 Gold",
       "url": "https://ddy1.mizhls.ru/ddy1/premium148/tracks-v1a1/mono.m3u8",
-      "url": "",
-      "origin": "",
-      "referer": "/"
+      "origin": "https://claplivehdplay.ru",
+      "referer": "https://claplivehdplay.ru/"
     }
   ]
 }
