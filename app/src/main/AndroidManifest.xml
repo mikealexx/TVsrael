@@ -23,7 +23,6 @@
     <uses-feature android:name="android.software.leanback"
         android:required="true" />
 
-
     <application
         android:banner="@drawable/tv_banner"
         android:allowBackup="true"
@@ -33,13 +32,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".MainActivity"
+        <!-- New Main Activity -->
+        <activity android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- Old Welcome Activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
         </activity>
 
         <activity android:name=".VideoPlayerActivity"
@@ -53,5 +57,4 @@
         </activity>
 
     </application>
-
 </manifest>
