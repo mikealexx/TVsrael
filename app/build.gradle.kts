@@ -13,8 +13,8 @@ android {
         minSdk = 21
         targetSdk = 34
         //x.y.zw: x[1 - Play Store, 2 - Non Play Store].y[minor version number].z[update number].w[1 - mobile, 2 - android TV]
-        versionCode = 10442
-        versionName = "v1.0.42 - alpha"
+        versionCode = 11452
+        versionName = "v1.1.0 - alpha"
 
     }
 
