@@ -58,14 +58,14 @@
     {
       "name": "Channel 10",
       "alias": "Sport 1",
-      "url": "https://www.olacast.live/cdn/premium144/chunks.m3u8",
-      "origin": "https://qqwebplay.xyz",
-      "referer": "https://qqwebplay.xyz/"
+      "url": "https://eu-fls2.mizhls.ru/eu-fls2/premium140/tracks-v1a1/mono.m3u8",
+      "origin": "https://dlhd.so/stream/stream-140.php",
+      "referer": "https://dlhd.so/stream/stream-140.php/"
     },
     {
       "name": "Channel 11",
       "alias": "Sport 2",
-      "url": "https://eu-fls2.mizhls.ru/eu-fls2/premium141/playlist.m3u8",
+      "url": "https://eu-fls2.mizhls.ru/eu-fls2/premium141/tracks-v1a1/mono.m3u8",
       "origin": "https://qqwebplay.xyz",
       "referer": "https://qqwebplay.xyz/"
     },
