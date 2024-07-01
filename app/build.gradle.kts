@@ -12,8 +12,8 @@ android {
         applicationId = "com.mikealexx.tvsrael"
         minSdk = 21
         targetSdk = 34
-        versionCode = 2021
-        versionName = "2.0.21 - alpha"
+        versionCode = 2101
+        versionName = "2.1.0 - alpha"
 
     }
 
@@ -37,4 +37,5 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.squareup.okhttp3:okhttp:4.9.3");
+    implementation("com.google.code.gson:gson:2.8.9")
 }
