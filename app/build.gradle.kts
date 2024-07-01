@@ -12,7 +12,7 @@ android {
         applicationId = "com.mikealexx.tvsrael"
         minSdk = 21
         targetSdk = 34
-        versionCode = 2101
+        versionCode = 2102
         versionName = "2.1.0 - alpha"
 
     }
