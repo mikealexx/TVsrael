@@ -49,7 +49,7 @@ public class GetTask extends AsyncTask<Context, Long, String> {
 
         try(Response response = call.execute()) {
             if (response.code() == 200) {
-                long contentLength = response.body().contentLength();
+                long contentLength = getContentLength(client);
                 long downloaded = 0;
                 byte[] buffer = new byte[8192];
                 int read;
@@ -70,20 +70,37 @@ public class GetTask extends AsyncTask<Context, Long, String> {
         }
     }
 
+    private long getContentLength(OkHttpClient client) {
+        Request initialRequest = new Request.Builder()
+                .url(url)
+                .header("Range", "bytes=0-1")  // Request the first byte to get the content length
+                .build();
+        try (Response response = client.newCall(initialRequest).execute()) {
+            if (response.isSuccessful() && response.header("Content-Range") != null) {
+                String contentRange = response.header("Content-Range");
+                // Content-Range format: "bytes 0-1/12345"
+                String totalLengthStr = contentRange.split("/")[1];
+                return Long.parseLong(totalLengthStr);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
     @Override
     protected void onProgressUpdate(Long... values) {
         if (values.length > 1) {
             progressBar.setMax(values[1].intValue());
         }
         progressBar.setProgress(values[0].intValue());
+        Log.d("ProgressUpdate", "Downloaded: " + values[0] + " / " + "Total: " + values[1]);
     }
 
     @Override
     protected void onPostExecute(String result) {
         if (result != null) {
             WelcomeActivity.channelManager = new ChannelManager(result);
-            Toast toast = Toast.makeText(context, "Channels loaded successfully", Toast.LENGTH_SHORT);
-            toast.show();
 
             Intent intent = new Intent(context, MainActivity.class);
             this.context.startActivity(intent);

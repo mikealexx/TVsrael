@@ -76,7 +76,8 @@
         android:progressDrawable="@drawable/custom_progress_bar"
         app:layout_constraintTop_toTopOf="@id/progressGuide"
         app:layout_constraintStart_toStartOf="@id/progressGuideLeft"
-        app:layout_constraintEnd_toEndOf="@id/progressGuideRight"/>
+        app:layout_constraintEnd_toEndOf="@id/progressGuideRight"
+        android:indeterminate="false"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/textGuide"
