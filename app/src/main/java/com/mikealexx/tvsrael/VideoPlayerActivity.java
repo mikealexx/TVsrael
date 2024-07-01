@@ -7,6 +7,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import com.google.android.exoplayer2.DefaultLoadControl;
+import com.google.android.exoplayer2.LoadControl;
 import com.google.android.exoplayer2.util.MimeTypes;
 
 import androidx.annotation.NonNull;
@@ -40,15 +42,20 @@ public class VideoPlayerActivity extends AppCompatActivity {
 
         String videoUrl = getIntent().getStringExtra("VIDEO_URL");
 
-        player = new SimpleExoPlayer.Builder(this).build();
+        LoadControl loadControl = new DefaultLoadControl.Builder()
+                .setBufferDurationsMs(15000, 30000, 1500, 5000)
+                .createDefaultLoadControl();
+
+        player = new SimpleExoPlayer.Builder(this).setLoadControl(loadControl).build();
         playerView.setPlayer(player);
 
         DefaultHttpDataSource.Factory dataSourceFactory = new DefaultHttpDataSource.Factory().setDefaultRequestProperties(buildHeaders());
         MediaItem mediaItem = new MediaItem.Builder().setUri(Uri.parse(videoUrl)).setMimeType(MIME_TYPE_HLS).build();
         player.setMediaSource(new HlsMediaSource.Factory(dataSourceFactory).createMediaSource(mediaItem));
 
+        player.setMediaSource(new HlsMediaSource.Factory(dataSourceFactory).createMediaSource(mediaItem));
         player.prepare();
-        player.play();
+        player.setPlayWhenReady(true);
     }
 
     private void hideSystemUi() {
@@ -66,8 +73,10 @@ public class VideoPlayerActivity extends AppCompatActivity {
     private Map<String, String> buildHeaders() {
         Map<String, String> headers = new HashMap<>();
         headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
-        headers.put("Origin", "https://claplivehdplay.ru");
-        headers.put("Referer", "https://claplivehdplay.ru/");
+        if(getIntent().getStringExtra("ORIGIN_URL") != null)
+            headers.put("Origin", getIntent().getStringExtra("ORIGIN"));
+        if(getIntent().getStringExtra("REFERER_URL") != null)
+            headers.put("Referer", getIntent().getStringExtra("REFERER"));
         return headers;
     }
 

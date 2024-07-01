@@ -13,8 +13,8 @@ android {
         minSdk = 21
         targetSdk = 34
         //x.y.zw: x[1 - Play Store, 2 - Non Play Store].y[minor version number].z[update number].w[1 - mobile, 2 - android TV]
-        versionCode = 1031
-        versionName = "1.0.31 - alpha"
+        versionCode = 1101
+        versionName = "1.1.0 - alpha"
 
     }
 
@@ -37,5 +37,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.22")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.squareup.okhttp3:okhttp:4.9.3");
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation("com.google.code.gson:gson:2.8.9")
 }

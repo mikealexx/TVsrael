@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".MainActivity"
+        <activity android:name=".WelcomeActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".VideoPlayerActivity"
             android:exported="true"
