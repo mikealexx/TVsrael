@@ -74,9 +74,9 @@ public class VideoPlayerActivity extends AppCompatActivity {
         Map<String, String> headers = new HashMap<>();
         headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
         if(getIntent().getStringExtra("ORIGIN_URL") != null)
-            headers.put("Origin", getIntent().getStringExtra("ORIGIN"));
+            headers.put("Origin", getIntent().getStringExtra("ORIGIN_URL"));
         if(getIntent().getStringExtra("REFERER_URL") != null)
-            headers.put("Referer", getIntent().getStringExtra("REFERER"));
+            headers.put("Referer", getIntent().getStringExtra("REFERER_URL"));
         return headers;
     }
 
