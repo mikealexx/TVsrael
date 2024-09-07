@@ -48,4 +48,13 @@ public class ChannelManager {
         }
         return null; // or handle not found case appropriately
     }
+
+    public int getChannelNumberByURL(String url) {
+        for (int i = 0; i < channels.size(); i++) {
+            if (channels.get(i).getUrl().equalsIgnoreCase(url)) {
+                return i + 1;
+            }
+        }
+        return -1; // or handle not found case appropriately
+    }
 }
