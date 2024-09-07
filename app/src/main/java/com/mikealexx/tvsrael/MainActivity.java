@@ -17,7 +17,7 @@ import com.google.android.exoplayer2.SimpleExoPlayer;
 
 public class MainActivity extends AppCompatActivity {
     private SimpleExoPlayer player;
-    private final ChannelManager channelManager = WelcomeActivity.channelManager;
+    public static final ChannelManager channelManager = WelcomeActivity.channelManager;
 
     @SuppressLint("MissingInflatedId")
     @Override

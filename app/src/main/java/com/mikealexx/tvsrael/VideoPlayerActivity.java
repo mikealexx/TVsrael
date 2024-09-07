@@ -1,5 +1,6 @@
 package com.mikealexx.tvsrael;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -82,6 +83,34 @@ public class VideoPlayerActivity extends AppCompatActivity {
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         switch(keyCode) {
+            case KeyEvent.KEYCODE_DPAD_UP:
+                if(MainActivity.channelManager.getChannelNumberByURL(getIntent().getStringExtra("VIDEO_URL")) == 18) {
+                    break;
+                }
+                int nextChannel = MainActivity.channelManager.getChannelNumberByURL(getIntent().getStringExtra("VIDEO_URL")) + 1;
+                Intent nextIntent = new Intent(VideoPlayerActivity.this, VideoPlayerActivity.class);
+                nextIntent.putExtra("VIDEO_URL", MainActivity.channelManager.getChannelUrlByName("Channel " + nextChannel));
+                nextIntent.putExtra("ORIGIN_URL", MainActivity.channelManager.getChannelOriginByName("Channel " + nextChannel));
+                nextIntent.putExtra("REFERER_URL", MainActivity.channelManager.getChannelRefererByName("Channel " + nextChannel));
+                getIntent().putExtra("CURRENT_CHANNEL", nextChannel);
+                finish();
+                startActivity(nextIntent);
+                break;
+
+            case KeyEvent.KEYCODE_DPAD_DOWN:
+                if(MainActivity.channelManager.getChannelNumberByURL(getIntent().getStringExtra("VIDEO_URL")) == 1) {
+                    break;
+                }
+                int prevChannel = MainActivity.channelManager.getChannelNumberByURL(getIntent().getStringExtra("VIDEO_URL")) - 1;
+                Intent prevIntent = new Intent(VideoPlayerActivity.this, VideoPlayerActivity.class);
+                prevIntent.putExtra("VIDEO_URL", MainActivity.channelManager.getChannelUrlByName("Channel " + prevChannel));
+                prevIntent.putExtra("ORIGIN_URL", MainActivity.channelManager.getChannelOriginByName("Channel " + prevChannel));
+                prevIntent.putExtra("REFERER_URL", MainActivity.channelManager.getChannelRefererByName("Channel " + prevChannel));
+                getIntent().putExtra("CURRENT_CHANNEL", prevChannel);
+                finish();
+                startActivity(prevIntent);
+                break;
+
             case KeyEvent.KEYCODE_ENTER:
             case KeyEvent.KEYCODE_DPAD_CENTER:
             case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
