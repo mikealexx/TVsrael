@@ -3,7 +3,9 @@
     {
       "name": "Channel 1",
       "alias": "Channel 9",
-      "url": "https://a5.pokaz.me/j5zLsZK8OmzS8jCZv1ZHFA/185/1728142979/index.m3u8"
+      "url": "https://a5.pokaz.me/j5zLsZK8OmzS8jCZv1ZHFA/185/1728142979/index.m3u8",
+      "origin": "http://ip.viks.tv",
+      "referer": "http://ip.viks.tv/"
     },
     {
       "name": "Channel 2",
