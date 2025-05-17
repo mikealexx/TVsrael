@@ -24,7 +24,9 @@
     {
       "name": "Channel 4",
       "alias": "Channel 13",
-      "url": "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8"
+      "url": "https://d2lckchr9cxrss.cloudfront.net/out/v1/c73af7694cce4767888c08a7534b503c/index.m3u8",
+      "origin": "https://13tv.co.il",
+      "referer": "https://13tv.co.il/"
     },
     {
       "name": "Channel 5",
