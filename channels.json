@@ -17,7 +17,7 @@
     {
       "name": "Channel 3",
       "alias": "Channel 12",
-      "url": "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12dvr/profile/2/hdntl=exp=1719664601~acl=%2f*~data=hdntl~hmac=1f5cc063c53d52965c85a0923c3cc050a287ac32cabcb34e0e82c574ddab5467/profileManifest.m3u8?_uid=9dac090a-649b-4fba-92d6-854385e543f1&rK=a1&_did=9c2ee716-8128-4956-a771-3741c3399be3",
+      "url": "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12n12wad/profile/1/hdntl=exp=1752939633~acl=%2f*~data=hdntl~hmac=9ff67c433db8dc6083e2d4042f6d8906123bd89d88f886290bbddd3f530da3fa/profileManifest.m3u8?_uid=dd5d144c-2033-402e-bb3c-339e378c9523&rK=bo&_did=2665f84b54c133ce7c5819af9f9e2908af31641c",
       "origin": "https://www.mako.co.il",
       "referer": "https://www.mako.co.il/"
     },
