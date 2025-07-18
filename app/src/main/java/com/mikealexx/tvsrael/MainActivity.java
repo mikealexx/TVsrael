@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         String button2URL = "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8";
 
         Button button3 = findViewById(R.id.button3);
-        String button3URL = "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12dvr/profile/2/hdntl=exp=1718451277~acl=%2f*~data=hdntl~hmac=8cbf3fd2036137c455f1d5a1ae92d9636350bcd7174a8eb099823ad2d0f6891e/profileManifest.m3u8?_uid=6ed0f3cf-96ad-46bd-97f0-60735ffe59b3&rK=a1&_did=ab7bec57-50bc-4ab5-ba26-9dda008c9b5b";
+        String button3URL = "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12n12wad/profile/1/hdntl=exp=1752939633~acl=%2f*~data=hdntl~hmac=9ff67c433db8dc6083e2d4042f6d8906123bd89d88f886290bbddd3f530da3fa/profileManifest.m3u8?_uid=dd5d144c-2033-402e-bb3c-339e378c9523&rK=bo&_did=2665f84b54c133ce7c5819af9f9e2908af31641c";
 
         Button button4 = findViewById(R.id.button4);
         String button4URL = "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8";
