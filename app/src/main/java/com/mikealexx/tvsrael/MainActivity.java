@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         String button2URL = "https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8";
 
         Button button3 = findViewById(R.id.button3);
-        String button3URL = "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12n12wad/profile/1/hdntl=exp=1760832139~acl=%2f*~data=hdntl~hmac=4b4d59c8837d92ecafec7bc098b300c1fc1d88e1d9f38453c912fb15630d6b20/profileManifest.m3u8?_uid=2c2fd7b4-7996-4382-bde4-30107a98993f&rK=b7&_did=17c29a7faf84d992eaa2f17502c1e7fad809bad5";
+        String button3URL = "https://mako-streaming.akamaized.net/stream/hls/live/2033791/k12makowad/profile/1/hdntl=exp=1762204624~acl=%2f*~data=hdntl~hmac=2a5d5afc1efed0895c5b79aab9171e7766cae4e01a49669dfdc371e3f863d102/profileManifest.m3u8?_uid=b211d503-9fca-4b4b-81f8-954205b478de&rK=b7&_did=17c29a7faf84d992eaa2f17502c1e7fad809bad5";
 
         Button button4 = findViewById(R.id.button4);
         String button4URL = "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8";
@@ -203,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button1URL);
+                intent.putExtra("ID", R.id.button1);
                 startActivity(intent);
             }
         });
@@ -212,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button2URL);
+                intent.putExtra("ID", R.id.button2);
                 startActivity(intent);
             }
         });
@@ -221,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button3URL);
+                intent.putExtra("ID", R.id.button3);
                 startActivity(intent);
             }
         });
@@ -230,6 +233,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button4URL);
+                intent.putExtra("ID", R.id.button4);
                 startActivity(intent);
             }
         });
@@ -239,6 +243,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button5URL);
+                intent.putExtra("ID", R.id.button5);
                 startActivity(intent);
             }
         });
@@ -248,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button6URL);
+                intent.putExtra("ID", R.id.button6);
                 startActivity(intent);
             }
         });
@@ -257,6 +263,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button7URL);
+                intent.putExtra("ID", R.id.button7);
                 startActivity(intent);
             }
         });
@@ -266,6 +273,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button8URL);
+                intent.putExtra("ID", R.id.button8);
                 startActivity(intent);
             }
         });
@@ -275,6 +283,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button9URL);
+                intent.putExtra("ID", R.id.button9);
                 startActivity(intent);
             }
         });
@@ -284,6 +293,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button10URL);
+                intent.putExtra("ID", R.id.button10);
                 startActivity(intent);
             }
         });
@@ -293,6 +303,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button11URL);
+                intent.putExtra("ID", R.id.button11);
                 startActivity(intent);
             }
         });
@@ -302,6 +313,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button12URL);
+                intent.putExtra("ID", R.id.button12);
                 startActivity(intent);
             }
         });
@@ -311,6 +323,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button13URL);
+                intent.putExtra("ID", R.id.button13);
                 startActivity(intent);
             }
         });
@@ -320,6 +333,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button14URL);
+                intent.putExtra("ID", R.id.button14);
                 startActivity(intent);
             }
         });
@@ -329,6 +343,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button15URL);
+                intent.putExtra("ID", R.id.button15);
                 startActivity(intent);
             }
         });
@@ -338,6 +353,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button16URL);
+                intent.putExtra("ID", R.id.button16);
                 startActivity(intent);
             }
         });
@@ -347,6 +363,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button17URL);
+                intent.putExtra("ID", R.id.button17);
                 startActivity(intent);
             }
         });
@@ -356,6 +373,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, VideoPlayerActivity.class);
                 intent.putExtra("VIDEO_URL", button18URL);
+                intent.putExtra("ID", R.id.button18);
                 startActivity(intent);
             }
         });
