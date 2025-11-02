@@ -38,11 +38,17 @@ public class VideoPlayerActivity extends AppCompatActivity {
         playerView = findViewById(R.id.player_view);
 
         String videoUrl = getIntent().getStringExtra("VIDEO_URL");
+        int buttonId = getIntent().getIntExtra("ID", -1);
 
         player = new SimpleExoPlayer.Builder(this).build();
         playerView.setPlayer(player);
 
-        DefaultHttpDataSource.Factory dataSourceFactory = new DefaultHttpDataSource.Factory().setDefaultRequestProperties(buildHeaders());
+        DefaultHttpDataSource.Factory dataSourceFactory;
+        if (buttonId == -1){
+            dataSourceFactory =  new DefaultHttpDataSource.Factory().setDefaultRequestProperties(buildHeaders());
+        } else{
+            dataSourceFactory =  new DefaultHttpDataSource.Factory().setDefaultRequestProperties(buildHeaders(buttonId));
+        }
         MediaItem mediaItem = new MediaItem.Builder().setUri(Uri.parse(videoUrl)).setMimeType(MIME_TYPE_HLS).build();
         player.setMediaSource(new HlsMediaSource.Factory(dataSourceFactory).createMediaSource(mediaItem));
 
