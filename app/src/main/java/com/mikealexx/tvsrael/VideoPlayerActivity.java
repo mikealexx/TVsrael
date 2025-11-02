@@ -62,9 +62,26 @@ public class VideoPlayerActivity extends AppCompatActivity {
         );
     }
 
+
+    private Map<String, String> buildHeaders(int id) {
+        Map<String, String> headers = this.buildHeaders();
+        if (id == R.id.button2) {
+            headers.put("Accept", "*/*");
+            headers.put("Accept-Language", "en-CA,en-US;q=0.7,en;q=0.3");
+            headers.put("Accept-Encoding", "gzip, deflate, br, zstd");
+            headers.put("Referer", "https://www.mako.co.il/");
+            headers.put("Origin", "https://www.mako.co.il");
+            headers.put("Sec-Fetch-Dest", "empty");
+            headers.put("Sec-Fetch-Mode", "cors");
+            headers.put("Sec-Fetch-Site", "cross-site");
+            headers.put("Connection", "keep-alive");
+            headers.put("TE", "trailers");
+        }
+        return headers;
+    }
     private Map<String, String> buildHeaders() {
         Map<String, String> headers = new HashMap<>();
-        headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0");
+        headers.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0");
         headers.put("Origin", "https://claplivehdplay.ru");
         headers.put("Referer", "https://claplivehdplay.ru/");
         return headers;
